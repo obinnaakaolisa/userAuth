@@ -1,5 +1,5 @@
 /*set the form to center*/
-form{
+form {
     max-width: 500px;
     padding: 10px 20px;
     background: #f4f7f8;
@@ -9,9 +9,11 @@ form{
     border-radius: 8px;
     font-family: Georgia, "Times New Roman", Times, serif;
 }
-.form-group{
+
+.form-group {
     margin: 2%;
 }
-h1{
+
+h1 {
     text-align: center;
 }
