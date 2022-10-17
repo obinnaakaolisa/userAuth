@@ -8,7 +8,10 @@ if(isset($_POST['submit'])){
 
     if(loginUser($username, $password)){
       header("Location:../dashboard.php");
-    } else echo "Details Incorrect!"; echo '<meta http-equiv="refresh" content="2; url=../forms/login.html">';
+    } else {
+        echo "Details Incorrect!";
+        echo '<meta http-equiv="refresh" content="2; url=../forms/login.html">';
+    }
 
 }
 
@@ -38,7 +41,6 @@ function loginUser($email, $password){
     } else return false;
 
     fclose($handle);
-
 }
 
 

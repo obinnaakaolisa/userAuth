@@ -7,18 +7,18 @@ if(isset($_POST['submit'])){
 
     if(registerUser($username, $email, $password)){
         echo "User registered successfully!";
-        echo '<meta http-equiv="refresh" content="2; url=../forms/login.html">';
-    } else echo "User not registered!"; echo '<meta http-equiv="refresh" content="2; url=../forms/register.html">';
-
+        echo '<meta http-equiv="refresh" content="2; url=/forms/login.html">';
+    } else {
+        echo "User not registered!"; 
+        echo '<meta http-equiv="refresh" content="2; url=../forms/register.html">';
+    }
 }
 
 function registerUser($username, $email, $password){
-
     //save data into the file
-    
     // echo "OKAY";
 
-    $filename = "../users.csv";
+    $filename = "../storage/users.csv";
     $handle = fopen($filename, 'w');
     $data = array($username, $email, $password);
     $delimeter = ",";

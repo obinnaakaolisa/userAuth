@@ -42,8 +42,6 @@ function resetPassword($email, $newpassword){
     } else return false;
 
     fclose($handle);
-
-    
 }
 
 
